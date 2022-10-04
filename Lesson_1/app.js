@@ -4,18 +4,18 @@
 Тема: основы JavaScript
 */
 
-// console.log("Hello World!");
-// console.warn("My first warning");
-// console.error("My first error");
+console.log("Hello World!");
+console.warn("My first warning");
+console.error("My first error");
 
 // snake case
 // var user_name_and_surname = "Evgenii Kiselev";
 
 // Camel case
-// var userName = prompt("What is your name?");
-// var userNameAndSurname = "Evgenii Kiselev";
+var userName = prompt("What is your name?");
+var userNameAndSurname = "Evgenii Kiselev";
 
-//alert("Hello, " + userName);
+alert("Hello, " + userName);
 
 /*
 Типы данных в JavaScript:
@@ -30,10 +30,10 @@
 */
 
 //Баг JS
-// console.log(typeof alert); // функция в JS является объектом, хотя здесь пишется function
+console.log(typeof alert); // функция в JS является объектом, хотя здесь пишется function
 
 //Баг JS
-// console.log(typeof null); // null в JS является отдельным типом данных, хотя здесь пишется object
+console.log(typeof null); // null в JS является отдельным типом данных, хотя здесь пишется object
 
 //1) String
 var customerName = "Evgenii";
