@@ -7,26 +7,6 @@ var customer = {
   IsResident: true,
   BirthDate: null,
   "Card type": "VISA",
-  //   Cards: [
-  //     {
-  //       CardPan: "7433 7439 2345 0895",
-  //       ExpiryDate: "05-05-2030",
-  //       PrintName: "Kiselev Evgenii",
-  //       CVC: 125,
-  //     },
-  //     {
-  //       CardPan: "6238 3249 3526 2783",
-  //       ExpiryDate: "06-06-2027",
-  //       PrintName: "Kiselev Evgenii",
-  //       CVC: 978,
-  //     },
-  //   ],
-  //   Passport: {
-  //     Series: "ID",
-  //     Number: "1616489",
-  //     ExpiryDate: "01-01-2025",
-  //     IssueAuthority: "CON #1",
-  //   },
 };
 
 //falsy - false, 0, NaN, "", null, undefined
@@ -66,30 +46,30 @@ for (var index of Object.keys(fruits)) {
 }
 console.log("--------------------------------------------");
 
-// var cardProcessingType = prompt("Enter card processing") || "";
+var cardProcessingType = prompt("Enter card processing") || "";
 
-// switch (cardProcessingType.toLowerCase()) {
-//   case "visa":
-//     console.log("You use VISA");
-//     break;
-//   case "mastercard":
-//     console.log("You use MasterCard");
-//     break;
-//   default:
-//     console.warn("Unknown answer...");
-//     break;
-// }
-// console.log(cardProcessingType);
+switch (cardProcessingType.toLowerCase()) {
+  case "visa":
+    console.log("You use VISA");
+    break;
+  case "mastercard":
+    console.log("You use MasterCard");
+    break;
+  default:
+    console.warn("Unknown answer...");
+    break;
+}
+console.log(cardProcessingType);
 
-// var moneySystems = ["Unistream", "RIA", "Contact"];
-// var userMoneySystem = prompt("Enter money system") || "";
+var moneySystems = ["Unistream", "RIA", "Contact"];
+var userMoneySystem = prompt("Enter money system") || "";
 
-// for (var moneySystem of moneySystems) {
-//   if (userMoneySystem.toLowerCase() === moneySystem.toLowerCase()) {
-//     console.log(`Money trasnfered by ${moneySystem}`);
-//     break;
-//   }
-// }
+for (var moneySystem of moneySystems) {
+  if (userMoneySystem.toLowerCase() === moneySystem.toLowerCase()) {
+    console.log(`Money trasnfered by ${moneySystem}`);
+    break;
+  }
+}
 
 //Вложенные циклы (цикл в цикле)
 
@@ -117,20 +97,19 @@ for (var group of goods) {
   console.log(result);
 }
 
-
 var size = 10;
 for (var i = 0; i < size / 2; i++) {
-    var line = "";
-    for (var j = 0; j < size / 2; j++) {
-      line += (i % 2 !== 0) ? " #" : "# ";
-    }
-    console.log(line);
+  var line = "";
+  for (var j = 0; j < size / 2; j++) {
+    line += i % 2 !== 0 ? " #" : "# ";
   }
-  
+  console.log(line);
+}
+
 for (var i = 0; i < 10; i++) {
   var line = "";
   for (var j = 0; j < 10; j++) {
-    line += (i % 2 === 0 && j % 2 !== 0) ? " " : "#";
+    line += i % 2 === 0 && j % 2 !== 0 ? " " : "#";
   }
   console.log(line);
 }
